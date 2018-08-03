@@ -23,10 +23,10 @@ Dengan isinya berikut
 Dalam contoh ini Prometheus berjalan sebagai layanan Docker pada kawasan Docker. Satu atau lebih mesin doker bergabung dengan sekumpulan docker, dengan menggunakan docker swarm, dan pada satu manajer dan buruh pelabuhanberkumpul di manajer dan node pekerja.
 /tmp/prometheus.yml  ini adalah konfigurasi prometheus 
 
-# my global config
 global:
-  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
-  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+
+  scrape_interval:     15s 
+  evaluation_interval: 15s
   external_labels:
       monitor: 'docker'
 rule_files:
